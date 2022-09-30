@@ -79,6 +79,11 @@
   background-color: white;
 }
 
+.opacity {
+  opacity: 0;
+  transition: 200ms;
+}
+
 /* view Mobile Navbar */
 
 @media (max-width: 768px) {
@@ -108,15 +113,16 @@
   .nav-links {
     position: fixed;
     left: 0;
-    top: 0;
+    top: var(--navbar-height);
     flex-direction: row;
     background-color: #262626;
     width: 100%;
     padding-left: 20px;
     height: var(--navbar-height);
     justify-content: space-between;
-    transition: 0.5s;
-    z-index: -1;
+    transition: 300ms;
+    transform: scaleY(0);
+    transform-origin: top;
   }
 
   .nav-item {
@@ -124,6 +130,10 @@
   }
 
   .nav-links.active {
-    top: 70px;
+    transform: scaleY(1);
+  }
+
+  .nav-links.active .opacity {
+    opacity: 1;
   }
 }

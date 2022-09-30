@@ -24,12 +24,12 @@ function NavBar() {
             <h3>minigames</h3>
           </figure>
           <div className={`${isActive ? "active" : ""} nav-links`}>
-            <p className="m-0 tag-name">Hi, Miguel!</p>
+            <p className="m-0 tag-name opacity">Hi, Miguel!</p>
             <div className="d-flex">
-              <i className="padding logo-moon">
+              <i className="padding logo-moon opacity">
                 <DarkModeIcon color="white" fontSize="large"></DarkModeIcon>
               </i>
-              <i className="padding navbar-icon">
+              <i className="padding navbar-icon opacity">
                 <GitHubIcon color="white" fontSize="inherit"></GitHubIcon>
               </i>
             </div>
