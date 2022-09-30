@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: calc(100% - var(--topbar-height));
+  height: calc(100% - var(--navbar-height));
   background-color: #313131;
   overflow: hidden;
   z-index: 0;
