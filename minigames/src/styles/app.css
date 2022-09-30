@@ -1,6 +1,8 @@
 * {
   --topbar-height: 70px;
-  --topbar-color: #424245;
+  --topbar-color: #454648;
+  --thumbnail-padding: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .page {
@@ -9,29 +11,9 @@
 }
 
 .topbar {
+  position: relative;
   width: 100%;
   height: var(--topbar-height);
   background-color: var(--topbar-color);
-}
-
-.home {
-  height: calc(100% - var(--topbar-height));
-  background-color: black;
-}
-
-.home_container {
-  height: 100%;
-  padding: 20px 0;
-}
-
-.thumbnail {
-  width: 200px;
-  height: 190px;
-  background-color: var(--topbar-color);
-  color: white;
-  border: 1px white solid;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: -10;
 }

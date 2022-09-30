@@ -21,18 +21,6 @@
     --negro: #ececec;
   }
 }
-/* Opcional */
-/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-/* Opcional */
-/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation: none !important;
-    animation: none !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
-}
 /* Reseteamos los margin y paddings de todas las etiquetas */
 * {
   margin: 0;
