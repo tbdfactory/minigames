@@ -4,8 +4,14 @@ import "./styles/App.css";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import GameContent from "./components/GameContent";
+import { useLocalStorage } from "./customHooks/useLocalStorage";
 
 function App() {
+  const [username, setUsername] = useLocalStorage("username", "");
+  if (username == undefined) {
+    setUsername(prompt("Ingrese su nombre de Gamer"));
+  }
+
   return (
     <div className="page">
       <NavBar />

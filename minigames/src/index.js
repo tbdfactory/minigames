@@ -4,7 +4,8 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // el StrictMode renderiza dos veces los componentes (de forma intencional) esto ayuda a detectar efectos secundarios de la renderización. SOLO ocurre durante el DESARROLLO.
+  // <React.StrictMode>
+  // </React.StrictMode>
+  <App />
 );
