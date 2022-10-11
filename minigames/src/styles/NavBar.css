@@ -6,6 +6,10 @@
 
 .nav-container {
   height: 100%;
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  /* width: var(--container-width); */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

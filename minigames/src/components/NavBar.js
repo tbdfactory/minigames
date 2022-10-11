@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <header>
       <nav className="nav">
-        <section className="nav-container container">
+        <section className="nav-container">
           <div onClick={handleClick} className={`${isActive ? "active" : ""} hamburger`}>
             <span className="bar"></span>
             <span className="bar"></span>
